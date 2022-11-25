@@ -1,13 +1,13 @@
-import { useState } from "react";
 import './login.css'
-import { Logo } from '../../components/Logo'
-
-import { auth } from "../../services/firebaseConnection";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import { toast } from "react-toastify";
+import { signInWithEmailAndPassword } from "firebase/auth";
+
+import { Logo } from '../../components/Logo'
 import { Input } from "../../components/Input";
+import { auth } from "../../services/firebaseConnection";
+
 
 export default function Login() {
     const [email, setEmail] = useState("");
