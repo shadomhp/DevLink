@@ -20,7 +20,6 @@ import {
 
 import { toast } from "react-toastify";
 
-
 export default function Admin() {
     const [nameInput, setNameInput] = useState("");
     const [urlInput, setUrlInput] = useState("");
